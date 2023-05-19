@@ -31,4 +31,10 @@ def get_pets_by_breed(pet_shop, pet_name):
 def increase_pets_sold(pet_shop, number_sold):
     pet_shop['admin']['pets_sold'] += number_sold
 
+def remove_pet_by_name(pet_shop, pet_name):
+    pets = pet_shop['pets']
+    for pet in pets:
+        if pet['name'] == pet_name:
+            pets.remove(pet)
+            return
 
