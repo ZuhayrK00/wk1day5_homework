@@ -30,4 +30,5 @@ def get_pets_by_breed(pet_shop, pet_name):
 
 def increase_pets_sold(pet_shop, number_sold):
     pet_shop['admin']['pets_sold'] += number_sold
-    
+
+
