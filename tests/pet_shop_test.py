@@ -101,7 +101,7 @@ class TestPetShop(unittest.TestCase):
         sold = get_pets_sold(self.cc_pet_shop)
         self.assertEqual(0, sold)
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_increase_pets_sold(self):
         increase_pets_sold(self.cc_pet_shop,2)
         sold = get_pets_sold(self.cc_pet_shop)
@@ -117,7 +117,7 @@ class TestPetShop(unittest.TestCase):
         pets = get_pets_by_breed(self.cc_pet_shop, "British Shorthair")
         self.assertEqual(2, len(pets))
 
-    @unittest.skip("delete this line to run the test")
+    # @unittest.skip("delete this line to run the test")
     def test_all_pets_by_breed__not_found(self):
         pets = get_pets_by_breed(self.cc_pet_shop, "Dalmation")
         self.assertEqual(0, len(pets))

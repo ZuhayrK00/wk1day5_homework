@@ -27,3 +27,7 @@ def get_pets_by_breed(pet_shop, pet_name):
         if pet['breed'] == pet_name:
             pets.append(pet)
     return pets
+
+def increase_pets_sold(pet_shop, number_sold):
+    pet_shop['admin']['pets_sold'] += number_sold
+    
